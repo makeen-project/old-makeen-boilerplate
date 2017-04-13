@@ -1279,7 +1279,7 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-boom@3.X.X, boom@3.x.x:
+boom@3.x.x, boom@3.X.X:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/boom/-/boom-3.2.2.tgz#0f0cc5d04adc5003b8c7d71f42cca7271fef0e78"
   dependencies:
@@ -2748,7 +2748,7 @@ globby@^5.0.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-glue@~4.1.0:
+glue@~4.1.0, glue@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/glue/-/glue-4.1.0.tgz#07ab6438cca589a306b0bbc36347b821b697402f"
   dependencies:
@@ -3478,7 +3478,7 @@ joi@^8.0.5, joi@8.x.x:
     moment "2.x.x"
     topo "2.x.x"
 
-joi@^9.1.1, joi@9.x.x, joi@9.X.X:
+joi@^9.1.1, joi@9.X.X, joi@9.x.x:
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/joi/-/joi-9.2.0.tgz#3385ac790192130cbe230e802ec02c9215bbfeda"
   dependencies:
@@ -3973,18 +3973,48 @@ lsmod@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lsmod/-/lsmod-1.0.0.tgz#9a00f76dca36eb23fa05350afe1b585d4299e64b"
 
-makeen-core@^0.4.0, makeen-core@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/makeen-core/-/makeen-core-0.4.0.tgz#c186c1581c648a3be3ac4a7c324bba125bf72711"
+makeen-cli@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/makeen-cli/-/makeen-cli-0.5.0.tgz#67e992f6db54052489e5ada17c46109614ef81f3"
+  dependencies:
+    joi "10.0.2"
+    lodash "4.17.2"
+    yargs "7.0.2"
+
+makeen-core@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/makeen-core/-/makeen-core-0.5.0.tgz#f93b8c2fcba916d468f2321abac21ac6717c1357"
   dependencies:
     axios "0.15.3"
     boom "4.2.0"
+    environment-override "1.0.2"
+    glue "4.1.0"
     hapi-boom-decorators "2.2.2"
     hapi-octobus "0.9.0"
     joi "10.2.2"
     lodash "^4.11.1"
     makeen-db "^0.4.0"
-    makeen-router "^0.4.0"
+    makeen-router "^0.5.0"
+    mongodb "2.2.24"
+    mongodb-extended-json "1.9.0"
+    octobus-mongodb-store "0.4.1"
+    octobus.js "0.29.0"
+    scooter "4.0.0"
+
+makeen-core@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/makeen-core/-/makeen-core-0.5.1.tgz#c3742264f59949ddfdd309c1f51f80dceb89ad58"
+  dependencies:
+    axios "0.15.3"
+    boom "4.2.0"
+    environment-override "1.0.2"
+    glue "4.1.0"
+    hapi-boom-decorators "2.2.2"
+    hapi-octobus "0.9.0"
+    joi "10.2.2"
+    lodash "^4.11.1"
+    makeen-db "^0.4.0"
+    makeen-router "^0.5.0"
     mongodb "2.2.24"
     mongodb-extended-json "1.9.0"
     octobus-mongodb-store "0.4.1"
@@ -4023,9 +4053,9 @@ makeen-monitoring@0.4.0:
     tv "5.0.2"
     vision "4.1.0"
 
-makeen-router@^0.4.0, makeen-router@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/makeen-router/-/makeen-router-0.4.0.tgz#8abbc6cbeba581807e75afef7838a4833704a125"
+makeen-router@^0.5.0, makeen-router@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/makeen-router/-/makeen-router-0.5.0.tgz#b32b558f9c4633b22b7471de86822ad1ff639966"
   dependencies:
     boom "4.2.0"
     joi "10.2.2"
@@ -4034,9 +4064,9 @@ makeen-router@^0.4.0, makeen-router@0.4.0:
     mongodb-extended-json "1.9.0"
     octobus.js "0.29.0"
 
-makeen-storage@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/makeen-storage/-/makeen-storage-0.4.0.tgz#7d42af77ca6d1eb39bceb5174e470be9aaf87488"
+makeen-storage@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/makeen-storage/-/makeen-storage-0.5.0.tgz#04feeb9fd3d0c7b605ed21bbaabdfd0699584c6c"
   dependencies:
     boom "4.2.0"
     fs-promise "1.0.0"
@@ -4045,21 +4075,21 @@ makeen-storage@0.4.0:
     inert "4.1.0"
     joi "10.0.2"
     lodash "4.17.2"
-    makeen-core "^0.4.0"
-    makeen-router "^0.4.0"
+    makeen-core "^0.5.0"
+    makeen-router "^0.5.0"
     mongodb "2.2.25"
     octobus-crud "0.5.0"
     octobus.js "0.29.0"
 
-makeen-web@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/makeen-web/-/makeen-web-0.4.0.tgz#d68ae1eaed0f063d21f05ce4d95ff05683de2d03"
+makeen-web@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/makeen-web/-/makeen-web-0.5.0.tgz#308d437c9c16f8416ec0ea663e84b36f618229d5"
   dependencies:
     h2o2 "5.4.0"
     hapi-react-views "9.2.1"
     inert "4.2.0"
     joi "10.4.1"
-    makeen-router "0.4.0"
+    makeen-router "^0.5.0"
     react "15.4.2"
     vision "4.1.1"
 
@@ -5599,7 +5629,7 @@ string-length@^1.0.0:
   dependencies:
     strip-ansi "^3.0.0"
 
-string-width@^1.0.1:
+string-width@^1.0.1, string-width@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-1.0.2.tgz#118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3"
   dependencies:
@@ -6174,6 +6204,12 @@ yargs-parser@^2.4.1:
     camelcase "^3.0.0"
     lodash.assign "^4.0.6"
 
+yargs-parser@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-5.0.0.tgz#275ecf0d7ffe05c77e64e7c86e4cd94bf0e1228a"
+  dependencies:
+    camelcase "^3.0.0"
+
 yargs@~3.10.0:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-3.10.0.tgz#f7ee7bd857dd7c1d2d38c0e74efbd681d1431fd1"
@@ -6201,6 +6237,24 @@ yargs@4.x.x:
     window-size "^0.2.0"
     y18n "^3.2.1"
     yargs-parser "^2.4.1"
+
+yargs@7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-7.0.2.tgz#115b97df1321823e8b8648e8968c782521221f67"
+  dependencies:
+    camelcase "^3.0.0"
+    cliui "^3.2.0"
+    decamelize "^1.1.1"
+    get-caller-file "^1.0.1"
+    os-locale "^1.4.0"
+    read-pkg-up "^1.0.1"
+    require-directory "^2.1.1"
+    require-main-filename "^1.0.1"
+    set-blocking "^2.0.0"
+    string-width "^1.0.2"
+    which-module "^1.0.0"
+    y18n "^3.2.1"
+    yargs-parser "^5.0.0"
 
 yeast@0.1.2:
   version "0.1.2"
