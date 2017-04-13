@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 import cluster from 'cluster';
 import Confidence from 'confidence';
+import { createServer } from 'makeen-core';
 import manifestConfig from './serverManifest.json';
-import createServer from './src/createServer';
 
 const numCPUs = require('os').cpus().length;
 
