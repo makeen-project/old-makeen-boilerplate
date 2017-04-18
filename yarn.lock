@@ -1279,7 +1279,7 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-boom@3.x.x, boom@3.X.X:
+boom@3.X.X, boom@3.x.x:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/boom/-/boom-3.2.2.tgz#0f0cc5d04adc5003b8c7d71f42cca7271fef0e78"
   dependencies:
@@ -3973,9 +3973,9 @@ lsmod@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lsmod/-/lsmod-1.0.0.tgz#9a00f76dca36eb23fa05350afe1b585d4299e64b"
 
-makeen-cli@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/makeen-cli/-/makeen-cli-0.5.0.tgz#67e992f6db54052489e5ada17c46109614ef81f3"
+makeen-cli@0.5.4:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/makeen-cli/-/makeen-cli-0.5.4.tgz#a4470f4653240994cd4ce841c0ddc0934a4e11a6"
   dependencies:
     joi "10.0.2"
     lodash "4.17.2"
@@ -4001,9 +4001,9 @@ makeen-core@^0.5.0:
     octobus.js "0.29.0"
     scooter "4.0.0"
 
-makeen-core@0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/makeen-core/-/makeen-core-0.5.1.tgz#c3742264f59949ddfdd309c1f51f80dceb89ad58"
+makeen-core@0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/makeen-core/-/makeen-core-0.5.2.tgz#54a964bebdcd0cea87bbde98b11df63ac06a66d3"
   dependencies:
     axios "0.15.3"
     boom "4.2.0"

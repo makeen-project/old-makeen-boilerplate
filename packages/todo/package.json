@@ -9,7 +9,7 @@
   "author": "Victor Zamfir <victor@makeen.io>",
   "license": "MIT",
   "dependencies": {
-    "makeen-core": "^0.5.1",
+    "makeen-core": "^0.5.2",
     "octobus-crud": "0.5.0",
     "boom": "4.2.0",
     "joi": "10.0.2",

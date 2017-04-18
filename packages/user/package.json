@@ -13,7 +13,7 @@
     "fs-promise": "1.0.0",
     "joi": "10.0.2",
     "lodash": "4.17.2",
-    "makeen-core": "0.5.1",
+    "makeen-core": "0.5.2",
     "makeen-mailer": "0.5.0",
     "makeen-router": "0.5.0",
     "makeen-user": "0.5.0",

@@ -9,8 +9,8 @@
   "scripts": {
     "postinstall": "npm run bootstrap",
     "bootstrap": "lerna bootstrap",
-    "watch": "node ./node_modules/makeen-cli/build/scripts/watch.js",
-    "build": "node ./node_modules/makeen-cli/build/scripts/build.js",
+    "watch": "makeen-watch --ignoredPackages web-app",
+    "build": "makeen-build --ignoredPackages web-app",
     "start:server": "babel-watch server.js --exclude packages/*/src/** packages/web/** packages/web-app/**",
     "start:client": "babel-watch client.js --exclude packages/*/src/** packages/web-app/** --watch packages/web/**",
     "start": "npm run build && run-p watch start:*",
@@ -50,7 +50,7 @@
     "good-squeeze": "~5.0.1",
     "hapi": "~16.1.1",
     "hoek": "~4.1.1",
-    "makeen-core": "0.5.1",
+    "makeen-core": "0.5.2",
     "makeen-db": "0.4.0",
     "makeen-documentation": "0.4.0",
     "makeen-monitoring": "0.4.0",
@@ -86,7 +86,7 @@
     "husky": "^0.13.3",
     "lerna": "2.0.0-beta.38",
     "lint-staged": "^3.4.0",
-    "makeen-cli": "0.5.0",
+    "makeen-cli": "0.5.4",
     "nodemon": "~1.11.0",
     "prettier": "0.22.0"
   }
