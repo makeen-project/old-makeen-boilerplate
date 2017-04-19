@@ -7,7 +7,7 @@ import itemSchema from '../schemas/item';
 const { idValidator } = mongoHelpers;
 
 class ItemsRouter extends MongoResourceRouter {
-  constructor(ItemRepository, config = {}) {
+  constructor({ ItemRepository, ListRepository }, config = {}) {
     super(ItemRepository, {
       namespace: 'TodoItems',
       basePath: '/lists/{listId}/items',
@@ -22,14 +22,13 @@ class ItemsRouter extends MongoResourceRouter {
       baseRouteConfig: {
         pre: [
           {
-            method: MongoResourceRouter.wrapHandler(function method(request) {
-              return this.ListRepository.findOne({
+            method: MongoResourceRouter.wrapHandler(request =>
+              ListRepository.findOne({
                 query: {
                   _id: objectId(request.params.listId),
                   accountId: objectId(request.auth.credentials.accountId),
                 },
-              });
-            }),
+              })),
             assign: 'list',
           },
         ],

@@ -19,6 +19,6 @@
     "makeen-user": "0.5.0",
     "mongodb": "2.2.12",
     "octobus-crud": "0.5.0",
-    "octobus.js": "0.29.0"
+    "octobus.js": "0.30.0"
   }
 }
