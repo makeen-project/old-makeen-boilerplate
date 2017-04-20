@@ -3478,7 +3478,7 @@ joi@^8.0.5, joi@8.x.x:
     moment "2.x.x"
     topo "2.x.x"
 
-joi@^9.1.1, joi@9.X.X, joi@9.x.x:
+joi@^9.1.1, joi@9.x.x, joi@9.X.X:
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/joi/-/joi-9.2.0.tgz#3385ac790192130cbe230e802ec02c9215bbfeda"
   dependencies:
@@ -3973,33 +3973,13 @@ lsmod@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lsmod/-/lsmod-1.0.0.tgz#9a00f76dca36eb23fa05350afe1b585d4299e64b"
 
-makeen-cli@0.5.4:
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/makeen-cli/-/makeen-cli-0.5.4.tgz#a4470f4653240994cd4ce841c0ddc0934a4e11a6"
+makeen-cli@0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/makeen-cli/-/makeen-cli-0.5.5.tgz#69add27da4092ebdab4791840115623b664826e4"
   dependencies:
     joi "10.0.2"
     lodash "4.17.2"
     yargs "7.0.2"
-
-makeen-core@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/makeen-core/-/makeen-core-0.5.0.tgz#f93b8c2fcba916d468f2321abac21ac6717c1357"
-  dependencies:
-    axios "0.15.3"
-    boom "4.2.0"
-    environment-override "1.0.2"
-    glue "4.1.0"
-    hapi-boom-decorators "2.2.2"
-    hapi-octobus "0.9.0"
-    joi "10.2.2"
-    lodash "^4.11.1"
-    makeen-db "^0.4.0"
-    makeen-router "^0.5.0"
-    mongodb "2.2.24"
-    mongodb-extended-json "1.9.0"
-    octobus-mongodb-store "0.4.1"
-    octobus.js "0.29.0"
-    scooter "4.0.0"
 
 makeen-core@^0.5.14:
   version "0.5.14"
@@ -4022,18 +4002,28 @@ makeen-core@^0.5.14:
     octobus.js "0.30.0"
     scooter "4.0.0"
 
-makeen-db@^0.4.0, makeen-db@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/makeen-db/-/makeen-db-0.4.0.tgz#ecdfb4ffcfc8d9065c62d561a5c45c91f0961a9a"
+makeen-core@^0.5.15:
+  version "0.5.15"
+  resolved "https://registry.yarnpkg.com/makeen-core/-/makeen-core-0.5.15.tgz#2a54b6fc9646949fba314ca750e016b35e858bf8"
   dependencies:
-    async "2.1.4"
-    babel-cli "6.18.0"
-    joi "10.0.2"
-    mongo-dnorm "0.2.4"
-    mongodb "2.2.12"
-    mongodb-migrate "2.0.1"
+    axios "0.15.3"
+    boom "4.2.0"
+    environment-override "1.0.2"
+    glue "4.1.0"
+    hapi-boom-decorators "2.2.2"
+    hapi-octobus "0.9.0"
+    joi "10.2.2"
+    lodash "^4.11.1"
+    makeen-db "^0.4.1"
+    makeen-router "^0.5.1"
+    mongodb "2.2.24"
+    mongodb-extended-json "1.9.0"
+    octobus-crud "0.5.0"
+    octobus-mongodb-store "0.4.1"
+    octobus.js "0.30.0"
+    scooter "4.0.0"
 
-makeen-db@^0.4.1:
+makeen-db@^0.4.1, makeen-db@0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/makeen-db/-/makeen-db-0.4.1.tgz#ff5ef52dda4581705c245415521bd6d5f340fa3c"
   dependencies:
@@ -4044,18 +4034,18 @@ makeen-db@^0.4.1:
     mongodb "2.2.12"
     mongodb-migrate "2.0.1"
 
-makeen-documentation@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/makeen-documentation/-/makeen-documentation-0.4.0.tgz#a328294d727f4331496343de688bf46b8d2b37fb"
+makeen-documentation@0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/makeen-documentation/-/makeen-documentation-0.4.1.tgz#e66152741bfced7fa2bf37df152282930ad2ec19"
   dependencies:
     blipp "2.3.0"
     hapi-swagger "7.4.0"
     inert "4.0.2"
     vision "4.1.0"
 
-makeen-monitoring@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/makeen-monitoring/-/makeen-monitoring-0.4.0.tgz#6f55a0165eb3b51d2c1ad0661376814a881c21aa"
+makeen-monitoring@0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/makeen-monitoring/-/makeen-monitoring-0.4.1.tgz#479ca5892dd7ebd73b92269bb13824d7f2f78723"
   dependencies:
     hapijs-status-monitor "0.5.0"
     inert "4.0.2"
@@ -4065,18 +4055,7 @@ makeen-monitoring@0.4.0:
     tv "5.0.2"
     vision "4.1.0"
 
-makeen-router@^0.5.0, makeen-router@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/makeen-router/-/makeen-router-0.5.0.tgz#b32b558f9c4633b22b7471de86822ad1ff639966"
-  dependencies:
-    boom "4.2.0"
-    joi "10.2.2"
-    lodash "^4.11.1"
-    mongodb "2.2.24"
-    mongodb-extended-json "1.9.0"
-    octobus.js "0.29.0"
-
-makeen-router@^0.5.1:
+makeen-router@^0.5.1, makeen-router@0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/makeen-router/-/makeen-router-0.5.1.tgz#f5d7090347eb346f5330b1c799a47b8e1edd6ff3"
   dependencies:
@@ -4087,9 +4066,9 @@ makeen-router@^0.5.1:
     mongodb-extended-json "1.9.0"
     octobus.js "0.30.0"
 
-makeen-storage@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/makeen-storage/-/makeen-storage-0.5.0.tgz#04feeb9fd3d0c7b605ed21bbaabdfd0699584c6c"
+makeen-storage@0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/makeen-storage/-/makeen-storage-0.5.2.tgz#38022227954e1f9ddb261ff82b64053f201e1a2a"
   dependencies:
     boom "4.2.0"
     fs-promise "1.0.0"
@@ -4098,21 +4077,21 @@ makeen-storage@0.5.0:
     inert "4.1.0"
     joi "10.0.2"
     lodash "4.17.2"
-    makeen-core "^0.5.0"
-    makeen-router "^0.5.0"
+    makeen-core "^0.5.14"
+    makeen-router "^0.5.1"
     mongodb "2.2.25"
     octobus-crud "0.5.0"
-    octobus.js "0.29.0"
+    octobus.js "0.30.0"
 
-makeen-web@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/makeen-web/-/makeen-web-0.5.0.tgz#308d437c9c16f8416ec0ea663e84b36f618229d5"
+makeen-web@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/makeen-web/-/makeen-web-0.5.1.tgz#65739f735a3fd33b28d5c4f64b43a16643f89a44"
   dependencies:
     h2o2 "5.4.0"
     hapi-react-views "9.2.1"
     inert "4.2.0"
     joi "10.4.1"
-    makeen-router "^0.5.0"
+    makeen-router "^0.5.1"
     react "15.4.2"
     vision "4.1.1"
 
