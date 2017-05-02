@@ -10,7 +10,12 @@ class FooRouter extends MongoResourceRouter {
     super(FooRepository, {
       namespace: 'Foo',
       basePath: '/foo',
-      entitySchema: omit(schema, ['_id', 'accountId']),
+      entitySchema: omit(schema, [
+        '_id',
+        'accountId',
+        'createdAt',
+        'updatedAt',
+      ]),
       ...config,
     });
 
