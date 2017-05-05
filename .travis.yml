@@ -4,6 +4,11 @@ language: node_js
 node_js:
    - "7.5.0"
 
+#Greetings! For successful deployment to dockerhub, you'll need to set the DOCKERHUB_REPO env var to your dockerhub (and create the repo)
+#you'll need to login to your travis portal and set the following env variables as secure env variables:
+#DOCKERHUB_USER
+#DOCKERHUB_PASS
+
 env:
    global:
       - DOCKER_COMPOSE_VERSION: 1.11.2
