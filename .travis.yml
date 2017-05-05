@@ -7,7 +7,7 @@ node_js:
 env:
    global:
       - DOCKER_COMPOSE_VERSION: 1.11.2
-      - DOCKERHUB_REPO: makeenllc/makeen-core
+      - DOCKERHUB_REPO: makeenllc/makeen-boilerplate
 
 services:
    - docker
