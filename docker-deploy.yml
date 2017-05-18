@@ -1,4 +1,4 @@
-version: '2'
+version: '2.1'
 
 services: 
    makeen:
@@ -11,8 +11,6 @@ services:
       links:
          - mongo
       ports:
-         - "3000:3003"
-      labels:
-         kompose.service.type: LoadBalancer
+         - "3000:3001"
    mongo:
       image: mongo:3.4

@@ -33,6 +33,7 @@ before_install:
    - sudo mv docker-compose /usr/local/bin
    - export VERSION=$(cat MAKEEN_VERSION)
    - if [[ "$TRAVIS_PULL_REQUEST" == "false" ]]; then echo "${TRAVIS_BRANCH}-${VERSION} BUILD ${TRAVIS_BUILD_NUMBER}" > MAKEEN_BUILD_INFO; fi 
+   - if [[ "$TRAVIS_BRANCH" == "master" ]]; then export NODE_ENV="production"; fi
 
 
 install:
@@ -42,6 +43,8 @@ install:
 # before_script -- not needed yet
 
 script:
+   - source tests/health-test.sh
+   - get_health
    - bash tests/curltests.sh
 
 #after_success:

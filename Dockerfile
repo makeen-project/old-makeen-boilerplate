@@ -3,10 +3,9 @@ FROM mhart/alpine-node:7.5.0
 ENV APP_USER=makeen \
 	APP_ROOT=/makeen-app \
 	NODE_ENV="development" \
-	MAKEEN_LISTEN_PORT=3003 \
-	APK_ADDPACK="git" \
+	MAKEEN_LISTEN_PORT=3001 \
+	APK_ADDPACK="git curl" \
 	APK_RMPACK="git"
-	# ^^^ that needs to be fixed. Apps shouldn't care if they dockerized or not.
 
 VOLUME /tmp \
 	/var/cache/apk
@@ -27,11 +26,13 @@ RUN cd /tmp && \
 ADD . ${APP_ROOT}
 
 RUN cd ${APP_ROOT} && \
+	npm run build && \
 	node ./node_modules/lerna/bin/lerna.js bootstrap && \
 	apk del ${APK_RMPACK}
 
 EXPOSE ${MAKEEN_LISTEN_PORT}
 
+HEALTHCHECK --interval=15s --timeout=5s --retries=3 CMD curl -f http://localhost:${MAKEEN_LISTEN_PORT}/documentation
 WORKDIR ${APP_ROOT}
 USER ${APP_USER}
 ENTRYPOINT ["npm", "run"]
