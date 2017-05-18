@@ -26,7 +26,7 @@ RUN cd /tmp && \
 ADD . ${APP_ROOT}
 
 RUN cd ${APP_ROOT} && \
-	#npm run build && \
+	npm run build && \
 	node ./node_modules/lerna/bin/lerna.js bootstrap && \
 	apk del ${APK_RMPACK}
 
