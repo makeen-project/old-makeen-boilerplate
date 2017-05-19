@@ -19,3 +19,6 @@ The following servers will be started:
 - web-app server - http://localhost:3000
 
 ## Running the project in production mode:
+
+##Docker
+You can do a docker pull as well.
