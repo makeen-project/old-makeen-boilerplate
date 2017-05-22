@@ -21,4 +21,4 @@ The following servers will be started:
 ## Running the project in production mode:
 
 ##Docker
-You can do a docker pull as well.
+You can do a docker pull as well. This is going to be fun!
