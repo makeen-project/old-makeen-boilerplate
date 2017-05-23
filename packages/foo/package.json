@@ -9,13 +9,13 @@
   "author": "Victor Zamfir <victor@makeen.io>",
   "license": "MIT",
   "dependencies": {
-    "boom": "4.2.0",
-    "joi": "10.0.2",
-    "lodash": "4.17.2",
+    "boom": "4.3.1",
+    "joi": "10.5.0",
+    "lodash": "4.17.4",
     "makeen-core": "0.5.20",
     "makeen-router": "^0.5.7",
-    "mongodb": "2.2.12",
+    "mongodb": "2.2.27",
     "octobus-crud": "0.5.0",
-    "octobus.js": "0.30.0"
+    "octobus.js": "0.31.1"
   }
 }
